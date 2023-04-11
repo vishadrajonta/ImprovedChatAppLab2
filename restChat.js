@@ -166,7 +166,7 @@ function completeFetch(result) {
 		console.log(mostRecentChatBox); 
 		document.getElementById('chatBox').innerHTML +=
 	    	chatBoxMsgs;  
-	    setTimeout(() => {
+	    	setTimeout(() => {
 	  		var start = mostRecentChatBox.indexOf(chatBoxMsgs); 
 	  		console.log(start); 
 	  		var end = start+chatBoxMsgs.length; 
@@ -175,7 +175,7 @@ function completeFetch(result) {
 	  		document.getElementById('chatBox').innerHTML =""; 
 	  		document.getElementById('chatBox').innerHTML +=
 	    	previousChatBox;    
-	    }, 3000); 
+	    	}, 3000); 
 	    
 		} else {
 		var chatBoxMsgs = "<font color='red'>" + name + ": </font>" + message + "<br />";
