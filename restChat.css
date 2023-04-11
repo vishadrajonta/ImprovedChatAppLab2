@@ -1,4 +1,7 @@
 /* Some styles for text */
+h1 {
+    font-family: Chalkduster, fantasy;
+}
 h2, h3, p {
     font-family: Verdana, sans-serif;
 }
@@ -10,18 +13,17 @@ h2, h3, p {
 
 /* Text Box attributes */
 .textinput {
-    width: 400px;
+    width: 600px;
     font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
     font-size: 82%;
 }
 
 /* Scroll Box attributes */
 .scrollabletextbox {
-    background-color: #fadf87;
-    height: 300px;
-    width: 400px;
+    background-color: #B6D0E2;
+    height: 330px;
+    width: 670px;
     font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 82%;
+    font-size: 110%;
     overflow:scroll;
 }
-
