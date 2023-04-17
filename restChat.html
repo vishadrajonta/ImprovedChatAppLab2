@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+	   
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
     function emailInvite() {
         var email = document.getElementById("email").value;
         console.log(email);
-        var subject = "Join my Chat";
-        var body = "Hey!! Join me at http://3.128.197.4/restChat/restChat.html";
-        var mailtoUrl = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-        window.open(mailtoUrl, "_blank");
+	    Email.send({
+    	Host : "smtp.elasticemail.com",
+    	Username : "emailsender917@gmail.com",
+  	  Password : "8F35D6066D0EB510939E6F5BA373EEF15C92",
+   	 To : email,
+   	 From : "emailsender917@gmail.com",
+   	 Subject : "Join my Chat",
+   	 Body : "Hey!! Join me at http://3.128.197.4/restChat/restChat.html"
+	}).then(
+  message => alert("Email Sent :)")
+);
     }
 </script>
 	   
